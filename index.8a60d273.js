@@ -563,8 +563,7 @@ class AES {
         return this.#processedText;
     }
 }
-const KEY = Buffer.from('ae1b499c2a1a60224789468a80f4b5525ee235e9a423deee28dbb6fecd2236ce', 'hex');
-VECTOR = Buffer.from('d158e282d71af2c636ea7da5303a256e', 'hex');
+const KEY = Buffer.from('ae1b499c2a1a60224789468a80f4b5525ee235e9a423deee28dbb6fecd2236ce', 'hex'), VECTOR = Buffer.from('d158e282d71af2c636ea7da5303a256e', 'hex');
 const initElements = ()=>({
         form: document.querySelector('#form'),
         input: document.querySelector('#inputText'),
