@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugrits - AES Encrypt/Decrypt</title>
+
+    <!-- stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--  -->
+</head>
+<body>
+    
+    <main class="container-fluid d-sm-flex justify-content-center align-items-center">
+        <form id="form" class="form-group d-xl-flex flex-row align-items-center justify-content-center">
+            <section class="container">
+                <label class="font-weight-bold" for="inputText">Plain Text</label>
+                <textarea class="form-control" name="inputText" id="inputText" cols="30" rows="10"></textarea>    
+            </section>
+            <section class="container bg-secondary rounded-lg p-4">
+                <!-- cipher option -->
+                <div class="container">
+                    <h3>Options</h3>
+                    <label for="encryptionOption">Encryption
+                        <input type="radio" name="option" id="encryptionOption" checked>
+                    </label>
+                    <label for="decryptionOption">Decryption
+                        <input type="radio" name="option" id="decryptionOption">
+                    </label>
+                </div>
+                <!-- Process -->
+                <div class="container">
+                    <button class="btn btn-light" id="processBtn">Process</button>
+                </div>
+            </section>
+            <section class="container">
+                <label class="font-weight-bold" for="outputText">Output</label>
+                <textarea class="form-control readonly" name="outputText" id="outputText" cols="30" rows="10" readonly></textarea>
+            </section>    
+        </form>
+    </main>
+
+    <!-- scripts -->
+        <script defer src="scripts/app.js" type="module"></script>
+    <!--  -->
+</body>
+</html>
