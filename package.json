@@ -2,6 +2,9 @@
   "name": "ias",
   "version": "0.1.0",
   "private": true,
+  "homepage": "druloloy.github.io/AES",
+  "repository": "https://github.com/druloloy/AES.git",
+  "source": "./index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -19,6 +22,5 @@
     "parcel": "^2.3.0",
     "process": "^0.11.10",
     "stream-browserify": "^3.0.0"
-  },
-  "source": "./index.html"
+  }
 }
